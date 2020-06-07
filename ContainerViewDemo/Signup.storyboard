@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vcq-fk-DeG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Signup View Controller-->
+        <scene sceneID="HKK-Gz-MOq">
+            <objects>
+                <viewController id="vcq-fk-DeG" customClass="SignupViewController" customModule="ContainerViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H4N-Ej-h2F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEg-sc-jZN">
+                                <rect key="frame" x="130" y="433" width="154" height="30"/>
+                                <state key="normal" title="I want to log in instead"/>
+                                <connections>
+                                    <action selector="switchToLoginButtonTapped:" destination="vcq-fk-DeG" eventType="touchUpInside" id="Lvn-4N-sYp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nanay Mo Signup Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TkQ-jV-euR">
+                                <rect key="frame" x="110.5" y="144" width="193" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TkQ-jV-euR" firstAttribute="centerX" secondItem="H4N-Ej-h2F" secondAttribute="centerX" id="4Bp-Nm-sFz"/>
+                            <constraint firstItem="KEg-sc-jZN" firstAttribute="centerX" secondItem="H4N-Ej-h2F" secondAttribute="centerX" id="Gkx-xW-EgP"/>
+                            <constraint firstItem="KEg-sc-jZN" firstAttribute="centerY" secondItem="H4N-Ej-h2F" secondAttribute="centerY" id="dv8-ek-zAI"/>
+                            <constraint firstItem="TkQ-jV-euR" firstAttribute="top" secondItem="2Fz-Pd-X5U" secondAttribute="top" constant="100" id="wrI-HC-b4Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Fz-Pd-X5U"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lPk-CB-rcd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="68"/>
+        </scene>
+    </scenes>
+</document>
